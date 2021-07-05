@@ -7,6 +7,8 @@ RUN apt-get update \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
+RUN apt install python3-pip
+
 # Set the application directory
 WORKDIR /app
 
